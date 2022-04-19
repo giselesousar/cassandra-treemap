@@ -111,7 +111,7 @@
           document
             .getElementById("open-link")
             .setAttribute("href", `templates/${selected}/index.html`);
-          fetch(`/templates/${selected}/cassandra.json`)
+          fetch(`./templates/${selected}/cassandra.json`)
             .then((res) => {
               return res.text();
             })
